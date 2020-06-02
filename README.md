@@ -12,7 +12,7 @@ https://vladimirzimin.github.io/Barbershop-all/source
 * Кроссбраузерность: IE11+, Chrome, Firefox, Opera, Safari.
 * Используется тег <picture> совместно с ретинизацией изображений в 2x 3x раза. Пример применения на странице - photo.html.
 * Семантическая разметка + БЭМ именованием классов.
-* Слайдеры реализованы с помощью ![Peppermint.js](http://wd.dizaina.net/scripts/peppermint/)
+* Слайдеры реализованы с помощью ![Peppermint.js]
 * Менеджер задач - Gulp.
 * Препроцессор - Sass(Scss).
 * JavaScript ES5.
