@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп «Бородинский»</title>
+</head>
+<body>
+    <!-- BEGIN content -->
+
+    <!-- begin header -->
+    <header class="page-header">
+        <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+        </a>
+
+        <!-- begin nav -->
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list  site-list">
+                    <li class="site-list__item">
+                      <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                      <a href="photo.html">Наши робаты</a>
+                    </li>
+                    <li class="site-list__item  site-list__item--active">
+                      <a>Записаться</a>
+                    </li>
+                    <li class="site-list__item">
+                      <a href="#">Контакты</a>
+                    </li>
+                    <li class="site-list__item">
+                      <a href="#">GitHub</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list  user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__login" href="login.html">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end nav -->
+
+    </header>
+    <!-- end header -->
+
+    <!-- begin main -->
+    <main class="page-main">
+
+        <h1 class="visually-hidden">Барбершоп &laquo;Бородинский&raquo; - истинно мужская классика</h1>
+
+        <!-- begin form-header -->
+        <section class="form-header">
+            <div class="form-header__wrapper">
+                <h2 class="form-header__title">Запись на стрижку</h2>
+                <a class="form-header__to-index button" href="index.html">На главную</a>
+            </div>
+        </section>
+        <!-- end form-header -->
+
+        <!-- begin form -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
+            <fieldset class="form__group">
+                <input class="form__input  form__surname" name="surname" type="text" placeholder="Фамилия">
+                <input class="form__input  form__first-name" name="first-name" type="text" placeholder="Имя">
+                <input class="form__input  form__second-name" name="second-name" type="text" placeholder="Отчество">
+            </fieldset>
+
+            <fieldset class="form__group">
+                <input class="form__input  form__phone" name="phone" type="tel" placeholder="Контактный телефон">
+                <input class="form__input  form__email" name="email" type="email" placeholder="Контактный e-mail">
+            </fieldset>
+
+            <textarea class="form__input  form__info" name="info" rows="3" placeholder="Доп. информация для мастера"></textarea>
+
+            <fieldset class="form__group  form__select radio-box">
+                <legend class="radio-box__title">Выберите модель бороды:</legend>
+                <ul class="radio-box__list">
+                    <li class="radio-box__item"><label for="admiral"><input type="radio" name="barber-model" id="admiral" value="admiral" checked>адмирал</label></li>
+                    <li class="radio-box__item"><label for="lumberjack"><input type="radio" name="barber-model" id="lumberjack" value="lumberjack">лесоруб</label></li>
+                    <li class="radio-box__item"><label for="polar-explorer"><input type="radio" name="barber-model" id="polar-explorer" value="polar-explorer">полярник</label></li>
+                    <li class="radio-box__item"><label for="boyar"><input type="radio" name="barber-model" id="boyar" value="boyar">боярин</label></li>
+                    <li class="radio-box__item"><label for="sage"><input type="radio" name="barber-model" id="sage" value="sage">мудрец</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__group  form__select checkbox">
+                <legend class="checkbox__title">Дополнительные услуги:</legend>
+                <ul class="checkbox__list">
+                    <li class="checkbox__item"><label for="tint"><input type="checkbox" name="Tint-beard" id="tint" checked>Подкрасить бороду</label></li>
+                    <li class="checkbox__item"><label for="wind"><input type="checkbox" name="Wind-the-mustache" id="wind" checked>Накрутить усы</label></li>
+                    <li class="checkbox__item"><label for="comb"><input type="checkbox" name="Comb-the-beard" id="comb">Причесать бороду</label></li>
+                    <li class="checkbox__item"><label for="trim"><input type="checkbox" name="Trim-the-temple" id="trim">Подровнять виски</label></li>
+                    <li class="checkbox__item"><label for="gray-hair"><input type="checkbox" name="Remove-gray-hair" id="gray-hair">Убрать седину</label></li>
+                    <li class="checkbox__item"><label for="bald-head"><input type="checkbox" name="Polish-bald-head" id="bald-head">Отполировать лысину</label></li>
+                </ul>
+            </fieldset>
+            <button class="form__button  button" type="submit">Отправить заявку</button>
+        </form>
+        <!-- end form -->
+
+    </main>
+    <!-- end main -->
+
+    <!-- begin footer -->
+    <footer class="page-footer">
+        <div class="footer__wrapper">
+            <div class="page-footer__contacts  contacts">
+                <b class="contacts__title">Барбершоп &laquo;Бородинский&raquo;</b>
+                <p class="contacts__text">
+                    г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+                    <a class="contacts__phone" href="tel:+78125558877"><span class="contacts-phone-mobile">Тел.:</span> +7 (812) 555-88-77</a>
+                </p>
+            </div>
+            <div class="page-footer__social  social">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item"><a class="social__link  social__link--vk" href="https://vk.com/">Мы в Вконтакте</a></li>
+                    <li class="social__item"><a class="social__link  social__link--fb" href="https://www.facebook.com/">Мы в Фейсбуке</a></li>
+                    <li class="social__item"><a class="social__link  social__link--in" href="https://www.instagram.com/">Мы в Инстаграме</a></li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright  copyright">
+                <b class="copyright__text">Сверстал:</b>
+                <a class="button  copyright__link" href="https://github.com/VladimirZimin">GITHUB link:</a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- END content -->
+
+</body>
+</html>
