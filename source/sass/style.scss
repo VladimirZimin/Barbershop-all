@@ -6,9 +6,57 @@
 
 
 
+.page-header {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    height: 85px;
+    @include wmin ($b-tablet) {
+      order: 2;
+      height: 400px;
+    }
+    @include wmin ($b-desktop) {
+      order: 2;
+      height: 648px;
+    }
+  }
+}
+
+
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  @include wmin ($b-tablet) {
+    width: auto;
+    margin: 0;
+  }
+  &__wrapper {
+    @include wmin ($b-tablet) {
+      display: flex;
+      justify-content: space-between;
+      width: $tablet-wrap;
+      margin: 0 auto;
+    }
+    @include wmin ($b-desktop) {
+      width: $desktop-wrap;
+    }
+  }
+  &__list {
+    @include reset-ul;
+  }
+}
+
 
 
 .site-list {
+  @include wmin ($b-tablet) {
+    display: flex;
+    width: 570px;
+  }
+  @include wmin ($b-desktop) {
+    width: 780px;
+  }
   &__item {
     font-size: 18px;
     line-height: 24px;
@@ -22,16 +70,79 @@
 }
 
 
+.user-list {
+  @include wmin ($b-tablet) {
+    width: 60px;
+  }
+  @include wmin ($b-desktop) {
+    width: 160px;
+  }
+}
+
+
 
 .stats {
+  width: 320px;
+  margin: 0 auto;
+  @include wmin ($b-tablet) {
+    width: $tablet-wrap;
+    margin-top: -185px;
+  }
+  @include wmin ($b-desktop) {
+    display: flex;
+    width: $desktop-wrap;
+    margin-top: -160px;
+  }
+  &__header {
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    @include wmin ($b-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include wmin ($b-desktop) {
+      display: flex;
+      flex-direction: column;
+      width: 240px;
+    }
+  }
   &__slogan {
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
   }
+  &__legend {
+    opacity: 0.3;
+    &--top {
+      display: none;
+      @include wmin ($b-tablet) {
+        display: block;
+      }
+      @include wmin ($b-desktop) {
+        display: block;
+      }
+    }
+    &--bottom {
+      @include wmin ($b-tablet) {
+        display: none;
+      }
+      @include wmin ($b-desktop) {
+        display: none;
+      }
+    }
+  }
   &__list {
+    width: 100%;
     border-collapse: collapse;
+    @include wmin ($b-tablet) {
+      display: flex;
+    }
+    @include wmin ($b-tablet) {
+      width: 640px;
+    }
   }
   &__row--dark {
     background-color: #404040;
@@ -44,9 +155,6 @@
     line-height: 18px;
     font-weight: 700;
     color: #ffffff;
-  }
-  &__legend {
-    opacity: 0.3;
   }
 }
 

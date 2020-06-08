@@ -12,20 +12,20 @@ $font-size: 20px;
 $line-height: 1.2;
 
 /* Размер контейнера */
-$width-mobile: 280px;
-$width-tablet: 640px;
-$width-desktop: 960px;
+$mobile-wrap: 280px;
+$tablet-wrap: 640px;
+$desktop-wrap: 960px;
 
 /* Breakpoint */
-$breakpoint-mobile: 320px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1080px;
-$breakpoint-mobile-only: $breakpoint-tablet - 1;
+$b-mobile: 320;
+$b-tablet: 768;
+$b-desktop: 1200;
+$breakpoint-mobile-only: $b-tablet - 1;
 
 // Отступы
-$indent-mobile: 20px / $breakpoint-mobile * 100%;
-$indent-tablet: 64px / $breakpoint-tablet * 100%;
-$indent-desktop: 60px / $breakpoint-desktop * 100%;
+$indent-mobile: 20px / $b-mobile * 100%;
+$indent-tablet: 64px / $b-tablet * 100%;
+$indent-desktop: 60px / $b-desktop * 100%;
 
 /* Ретина */
 $retina-dpi: 144dpi;

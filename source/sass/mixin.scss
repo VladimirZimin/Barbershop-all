@@ -19,6 +19,27 @@
   list-style: none;
 }
 
+
+/* Медиавыражения width */
+@mixin wmax ($width) {
+  @media  (max-width: $width+ "px") { @content; }
+}
+
+@mixin wmin ($width) {
+ @media  (min-width: $width+ "px") { @content; }
+}
+
+/* медиавыражения height */
+@mixin hmax ($height) {
+  @media (max-height: $height + "px") { @content; }
+}
+
+@mixin hmin ($height) {
+  @media (min-height: $height + "px") { @content; }
+}
+
+
+
 /* Стилизация placeholder */
 @mixin placeholder {
   &::-webkit-input-placeholder {@content;}
@@ -47,3 +68,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 }
+
+
+
+
+
+
+
