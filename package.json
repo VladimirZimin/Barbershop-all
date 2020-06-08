@@ -1,0 +1,31 @@
+{
+  "name": "barbershop-next-level",
+  "version": "0.0.1",
+  "private": true,
+  "description": "barbershop-adaptive",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "autoprefixer": "6.7.x",
+    "browser-sync": "^2.18.8",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-sass": "3.1.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "6.10"
+  }
+}

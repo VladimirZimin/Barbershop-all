@@ -1,0 +1,13 @@
+.history
+src/css/style.css
+build/
+node_modules/
+.vscode/
+source/libs/
+Thumbs.db
+*.log
+*/*.log
+*.psd
+*.pdf
+*.doc
+*.docx

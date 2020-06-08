@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* Миксины */
+/* Подключение шрифта */
+/* Сброс списков */
+/* Стилизация placeholder */
+/* Доступное скрытие элемента */
+/* Цвета */
+/* Размер шрифта */
+/* Размер контейнера */
+/* Breakpoint */
+/* Ретина */
+@font-face {
+  font-family: "PTSans Narrow";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt-sans-narrow-v8-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-sans-narrow-v8-latin_cyrillic-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "PTSans Narrow";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/pt-sans-narrow-v8-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/pt-sans-narrow-v8-latin_cyrillic-700.woff") format("woff"); }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "PTSans Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: black;
+  background-color: white; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+button,
+input,
+form {
+  font: inherit; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.site-list__item {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #826550; }
+
+.stats__slogan {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.stats__list {
+  border-collapse: collapse; }
+
+.stats__row--dark {
+  background-color: #404040; }
+
+.stats__row--light {
+  background-color: #4e4e4e; }
+
+.stats__value {
+  font-size: 40px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff; }
+
+.stats__legend {
+  opacity: 0.3; }

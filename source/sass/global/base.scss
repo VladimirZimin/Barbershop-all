@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  font-family: $main-font;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: $line-height;
+  color: black;
+
+  background-color: white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+form {
+  font: inherit;
+}
+
+@include visually-hidden;
+
+

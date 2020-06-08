@@ -1,0 +1,52 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+@import "global/fonts.scss";
+@import "global/base.scss";
+
+
+
+
+
+.site-list {
+  &__item {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: $icon-color;
+  }
+
+}
+
+
+
+.stats {
+  &__slogan {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__list {
+    border-collapse: collapse;
+  }
+  &__row--dark {
+    background-color: #404040;
+  }
+  &__row--light {
+    background-color: #4e4e4e;
+  }
+  &__value {
+    font-size: 40px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  &__legend {
+    opacity: 0.3;
+  }
+}
+

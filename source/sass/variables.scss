@@ -1,0 +1,32 @@
+/* Цвета */
+$header-color--black: #000000;
+$header-color--mob: #242424;
+$icon-color: #826550;
+$advantages-color: #353535;
+$content-color: #f8f5f2;
+$footer-color: #292929;
+
+/* Размер шрифта */
+$main-font: "PTSans Narrow", Arial, sans-serif;
+$font-size: 20px;
+$line-height: 1.2;
+
+/* Размер контейнера */
+$width-mobile: 280px;
+$width-tablet: 640px;
+$width-desktop: 960px;
+
+/* Breakpoint */
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1080px;
+$breakpoint-mobile-only: $breakpoint-tablet - 1;
+
+// Отступы
+$indent-mobile: 20px / $breakpoint-mobile * 100%;
+$indent-tablet: 64px / $breakpoint-tablet * 100%;
+$indent-desktop: 60px / $breakpoint-desktop * 100%;
+
+/* Ретина */
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
