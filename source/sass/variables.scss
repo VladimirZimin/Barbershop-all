@@ -20,7 +20,7 @@ $desktop-wrap: 960px;
 $b-mobile: 320;
 $b-tablet: 768;
 $b-desktop: 1200;
-$breakpoint-mobile-only: $b-tablet - 1;
+$b-mobile-only: $b-tablet - 1;
 
 // Отступы
 $indent-mobile: 20px / $b-mobile * 100%;
